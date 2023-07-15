@@ -1,0 +1,28 @@
+
+       <div class="row" >
+        <h1 class="fw-bold text-center "   >Crear Calculo</h1>
+
+        <div class="col-lg-12" >  
+          <div class="text-center  my-3" *ngIf="validacion === true " >
+            <span class="alert alert-danger" >El formulario esta lleno incorrectamente</span> 
+
+          </div>
+         
+           <label for="unidad" >Elige la unidad</label>
+           <input class="form-control"  type="text"  [(ngModel)]="unidad"  placeholder="elige la unidad" id="unidad" >
+
+            <label for="dias">Cuantas veces pagaste </label>
+            <input  class="form-control  form-control-lg  my-2"  [(ngModel)]="veces"   type="number"  id="dias" placeholder="Escribe las ">
+            <label for="dinero">Cantidad de dinero</label>
+
+           <input class="form-control form-control-lg" type="number"  id="dinero"    [(ngModel)]="cantidadDinero"    placeholder="Escribe la cantidad de dinero">
+                 
+       
+           
+           <div class="text-center" >
+                    <button class="btn btn-success w-50 my-3 " (click)="hacerCalculo()"  >Ver Resultado</button>
+
+                   </div>
+        </div>
+       
+    </div>
